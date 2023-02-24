@@ -22,7 +22,11 @@ function processData(jsonData) {
           alt="" />
         <div class="info">
           <h2>${imovel["codigo"]} - ${imovel["nome"]} ${imovel["tamanho"]}</h2>
+          <p class="${imovel["descricao"] ? "" : "remover"}">
+              ${imovel["descricao"]}
+            </p>
           <ul>
+            
             <li class="${imovel["quarto"] > 0 ? "" : "remover"}">
               <span>${imovel["quarto"]}</span>
               <img class="icone" src="/assets/icones/bibed.svg" alt="" />
