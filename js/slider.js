@@ -17,7 +17,7 @@ function processData(jsonData) {
     slider.innerHTML += `
     <div class="slide${i == 0 ? " active" : ""}" key=${i}>
         <img
-          src="https://alopsantos.github.io/slideimobiliaria/assets/images/${
+          src="assets/images/${
             imovel["codigo"] + ".jpg"
           }"
           alt="" />

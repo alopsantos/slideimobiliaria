@@ -10,7 +10,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1d2128;
+  background-color: #1d2128;
+  background-image: url(/assets/icones/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 ul,
 li {
@@ -21,7 +24,7 @@ li {
   width: 1280px;
   height: 720px;
   /* margin: 10px; */
-  background: #1d2128;
+  /* background: #1d2128; */
 }
 
 .img-slider .slide {
@@ -91,6 +94,14 @@ li {
 
 .info ul li.remover {
   display: none;
+}
+
+.slide .info span{
+  transform: rotate(90deg);
+  transition: all 2s;
+}
+.slide.active .info span{
+  transform: rotate(0);
 }
 
 .info img.icone {
